@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    color: white;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 150px;
+    font-size: 100px;
+}
+#startBtn{
+    background-color: #4c77af;
+    border: none;
+    color: white;
+    margin: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#teamErstellen{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    margin: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+#spielerEingabe{
+    background-color: #b4ced6;
+    border: none;
+    color: rgb(71, 66, 66);
+    margin: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#spielerHinzufuegen{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    margin: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#listeLeeren{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    margin: 30px;
+    padding: 15px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.teamContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    font-size: 50px;
+}
