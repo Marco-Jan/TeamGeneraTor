@@ -1,11 +1,16 @@
+
 let x = "kopf";
 let y = "Zahl";
 
 
-document.getElementById('startBtn').addEventListener('click', Münzwurf);
+document.getElementById('coinToss').addEventListener('click', Münzwurf);
 
 
 function Münzwurf() {
+    document.getElementById('preTeamTable').innerHTML = "";
+
+    document.getElementById('team1Container').innerHTML = ""
+    document.getElementById('team2Container').innerHTML = ""
     setTimeout(() => {
         document.getElementById('parentContainer').innerHTML = ".";
     }, 100)
@@ -43,6 +48,8 @@ function spielerHinzufuegen() {
     if (spielerName) {
         spielerListe.push(spielerName);
         eingabe.value = '';
+        document.getElementById('parentContainer').innerHTML = "";
+        document.getElementById('preTeamTable').innerHTML = spielerListe;
         console.log(spielerListe);
     }
 }
@@ -74,6 +81,10 @@ document.getElementById('listeLeeren').addEventListener('click', listeLeeren);
 
 function listeLeeren() {
     spielerListe = [];
+    document.getElementById('preTeamTable').innerHTML = "";
+    document.getElementById('parentContainer').innerHTML = "";
+    document.getElementById('team1Container').innerHTML = "";
+    document.getElementById('team2Container').innerHTML = "";
     console.log('Spielerliste geleert:', spielerListe);
 }
 
