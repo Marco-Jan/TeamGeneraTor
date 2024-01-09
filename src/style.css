@@ -121,3 +121,41 @@ body{
     padding: 50px;
     font-size: 100px;
 }
+
+
+/* Basis-Stile, die für alle Bildschirmgrößen gelten */
+
+/* Hier fügen wir die Media Queries hinzu */
+
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 40px; /* Kleinere Schriftgröße für Handys */
+    }
+
+    .header {
+        font-size: 40px;
+        padding: 20px;
+    }
+
+    .in_outContainer {
+        flex-direction: column; /* Elemente untereinander statt nebeneinander */
+    }
+
+    .containerInput, .containerTeams {
+        padding: 20px;
+        margin: 20px;
+        font-size: 25px;
+    }
+
+    .containerInput input[type="text"], 
+    .containerInput button {
+        width: 150px; /* Anpassung der Breite für kleinere Bildschirme */
+        padding: 10px;
+        margin: 10px;
+        font-size: 14px;
+    }
+
+    #preTeamTable, #team1Container, #team2Container {
+        font-size: 20px;
+    }
+}

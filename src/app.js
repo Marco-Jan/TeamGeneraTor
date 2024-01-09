@@ -1,30 +1,30 @@
 
-let x = "kopf";
-let y = "Zahl";
 
 
 document.getElementById('coinToss').addEventListener('click', Münzwurf);
 
 
 function Münzwurf() {
-    document.getElementById('preTeamTable').innerHTML = "";
+    let x = "Kopf";
+    let y = "Zahl";
+    document.getElementById('preTeamTable', 'team1Container', 'team2Container').innerHTML = "";
 
-    document.getElementById('team1Container').innerHTML = ""
-    document.getElementById('team2Container').innerHTML = ""
+
     setTimeout(() => {
         document.getElementById('parentContainer').innerHTML = ".";
-    }, 100)
+    }, 200)
     setTimeout(() => {
         document.getElementById('parentContainer').innerHTML = "..";
-    }, 400)
+    }, 500)
     setTimeout(() => {
         document.getElementById('parentContainer').innerHTML = "...";
-    }, 700)
+    }, 800)
 
 
     setTimeout(() => {
-        const Münzwurf = Math.random() <= 0.5 ? x : y;
-        if (Münzwurf === x) {
+        const münzwurf = Math.random() <= 0.5 ? x : y;
+
+        if (münzwurf == x) {
             document.getElementById('parentContainer').innerHTML = "Kopf";
             console.log("kopf1");
 
@@ -33,7 +33,7 @@ function Münzwurf() {
             console.log("zahl1");
         }
     }
-        , 2000);
+        , 1500);
 };
 
 
@@ -81,10 +81,7 @@ document.getElementById('listeLeeren').addEventListener('click', listeLeeren);
 
 function listeLeeren() {
     spielerListe = [];
-    document.getElementById('preTeamTable').innerHTML = "";
-    document.getElementById('parentContainer').innerHTML = "";
-    document.getElementById('team1Container').innerHTML = "";
-    document.getElementById('team2Container').innerHTML = "";
+    document.getElementById('preTeamTable', 'parentContainer', 'team1Container', 'team2Container').innerHTML = "";
     console.log('Spielerliste geleert:', spielerListe);
 }
 
